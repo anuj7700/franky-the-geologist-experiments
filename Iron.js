@@ -1,4 +1,6 @@
 class Iron {
+    //This is the constructor to insialize iron objects
+    // with x, y, width and height
     constructor(x,y,width,height) {
       var options = {
         'restitution':0.8,
@@ -11,7 +13,7 @@ class Iron {
       this.height = height;
       World.add(world, this.body);
     }
-
+    //This function displays a rectangular shape
     display(){
       var pos =this.body.position;
       rectMode(CENTER);
